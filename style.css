@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: start;
     align-items: center;
-    min-height: 100vh;
+    min-height: 500vh;
     overflow: hidden;
     background-color: var(--background-color);
 }
@@ -52,6 +52,58 @@ bottom: -5px;
 background-color: white;
 transition: .3s;
 }
+header nav .active::before{
+    background-color: var(--aqua-color);
+}
 header nav a:hover::before{
     width: 50px;
+}
+.img-box{
+    width: 560px;
+    height: 560px;
+    position: relative;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-box img{
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 10px 10px 50px white;
+    background-color: var(--aqua-color);
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+.text-box{
+    width: 50%;
+    margin: 20px 0px 0px 80px;
+    text-align: start;
+    color: white;
+}
+.text-box .skills{
+    color: var(--aqua-color);
+}
+.text-box h1{
+    font-size: 32px;
+    font-weight: 300;
+}
+.text-box .icon-box{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+}
+.text-box .icon-box i{
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: -2s;
+}
+.text-box .icon-box i:hover{
+    background-attachment: white;
+    color: var(--background-color);
 }
