@@ -72,8 +72,8 @@ header nav a:hover::before{
     border-radius: 50%;
     box-shadow: 5px 5px 20px white;
     background-color: var(--aqua-color);
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     position: absolute;
 }
 .text-box{
@@ -106,7 +106,8 @@ header nav a:hover::before{
 }
 .text-box .icon-box i:hover{
     background-attachment: white;
-    color: var(--background-color);    
+    color: var(--background-color); 
+    page-break-before: left;   
 }
 .text-box button{
     position: relative;
